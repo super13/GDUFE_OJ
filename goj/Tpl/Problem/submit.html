@@ -1,0 +1,18 @@
+<html>
+<body>
+	<h1>Submit Your Code</h1>
+	<form action="__URL__/submitCode" method="post">
+	Problem ID:
+	<input name=problem_id type="text" value={$data.id}>
+	Language:
+	<select name="lang">
+ 	 	<option>C</option>
+ 		<option>C++</option>
+		<option>Java</option>
+	</select>
+	<br /><br />
+	<textarea name=code  style="width: 667px; height: 373px"></textarea>
+	<input type="submit" value="Submit"/>
+</form>
+</body>
+</html>

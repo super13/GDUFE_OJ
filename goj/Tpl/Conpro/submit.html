@@ -1,0 +1,20 @@
+<html>
+<body>
+	<h1>Submit Your Code</h1>
+	<form action="__URL__/submitCode" method="post">
+	Problem ID:
+	<input name=pid type="text" value={$data.pid} >
+	
+	Contest ID:<input name=cid type="text" value={$data.cid} >
+	Language:
+	<select name="lang">
+ 	 	<option>C</option>
+ 		<option>C++</option>
+		<option>Java</option>
+	</select>
+	<br /><br />
+	<textarea name=code  style="width: 667px; height: 373px"></textarea>
+	<input type="submit" value="Submit"/>
+</form>
+</body>
+</html>

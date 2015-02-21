@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Problem List of GDUFE Online Judge</title>
+<link href="../Public/main.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="/goj/Tpl/Public/favicon.ico" type="image/x-icon" />
+<script src = "//code.jquery.com/jquery-1.10.2.min.js" type = "text/javascript"></script>
+<script src = "../Public/page.js" type = "text/javascript"></script>
+<script src ="../Public/Login.js" type="text/javascript"></script>
+</head>
+
+<body onload="changeText()"> 
+<div id="wrapper">
+        <div id="header">
+                <div id="top"><img src="../Public/contestTop.jpg"  alt=""/></div>
+                <div id="mainnav">
+			<div>
+                        <ul>
+                                <li id="home"><a href="http://acm.gdufe.edu.cn/" >Home</a></li>
+                                <li id="prob"><a href="javascript:;" class= "thispage">CT.Problems</a></li>
+                                <li id="stat"><a href="http://acm.gdufe.edu.cn/Cstatu/readList/cid/{$cid}" >CT.Status</a></li>
+                                <li id="rank"><a href="http://acm.gdufe.edu.cn/Crank/readList/cid/{$cid}">CT.Ranklist</a></li>
+				<li id="sta"><a href="http://acm.gdufe.edu.cn/Conpro/statistics/cid/{$cid}">Statistics</a></li>
+
+			</ul>
+			</div>
+                                <div id= "LoginArea" class="LoginArea">
+					<ul>	
+                                        <li id="regi"><a href='http://acm.gdufe.edu.cn/User/Register'>Register</a></li>
+                                        <li id="log"><a href='http://acm.gdufe.edu.cn/User/Login'>Login</a></li>
+					</ul>
+                                </div>
+                </div>
+        </div>
+<div id="main">
+<div id = "title">
+<h1>Contest Problems</h1>
+</div>
+<div class="tableDiv">
+<table id="ContestPro" width="768">
+	<tr>
+	  <th width="5%" scope="col">&nbsp;</th>
+          <th width="15%" scope="col">ID</th>
+          <th width="65%" scope="col">Problem</th>
+          <th width="15%" scope="col">Ratio(AC/Submited)</th>
+        </tr>
+     <volist name="data" id="vo">
+     <tr>
+	<td class="isSolved" id="Problems">{$vo.isSolved}</td>
+     <td class ="ProText" id="Problems">
+        <a href ="http://acm.gdufe.edu.cn/Conpro/read/pid/{$vo.pid}/cid/{$vo.cid}"style="TEXT-DECORATION:none";>{$vo.pid}</a>
+     </td>
+     <td class="ProText" id="Problems">
+        <a href ="http://acm.gdufe.edu.cn/Conpro/read/pid/{$vo.pid}/cid/{$vo.cid}"style="TEXT-DECORATION:none";>{$vo.title}</a>
+     </td>
+     <td>
+        {$vo.ac}/{$vo.total}
+     </td>
+     </tr>
+     </volist>
+     </table>
+</div>
+</div>	
+  <div id="footer">&copy; Copyright 2013 GDUFE All Rights Reserved</div>
+</div>    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home of GDUFE Online Judge</title>
+<meta name="description" content="广东财经大学acm在线评测系统">
+<meta name="keywords" content="acm, gdcc, gdufe, Online Judge, 广东财经大学">
+<link href="../Public/main.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../Public/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../Public/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="../Public/Login.js"></script>
+<script src = "//code.jquery.com/jquery-1.10.2.min.js" type = "text/javascript"></script>
+<script src = "../Public/page.js" type = "text/javascript"></script>
+</head>
+
+<body onload="changeText()">
+<div id="preload"></div>
+<div id="wrapper">
+  <div id="header">
+    <div id="top"><img src="../Public/top.jpg" alt=""/></div>
+    <div id="mainnav">
+     <div>
+      <ul>
+        <li id="home"><a href="javascript:;" class = "thispage">Home</a></li>
+        <li id="prob"><a href="Problem/readList">Problems</a></li>
+        <li id="stat"><a href="Statu/readList">Status</a></li>
+        <li id="rank"><a href="User/readList">Ranklist</a></li>
+	<li id="cont"><a href="Contest/readList">Contests</a></li>
+	<li id="bug"><a href="Feedback">Feedback</a></li>
+      </ul>
+     </div>
+		<div id= "LoginArea" class="LoginArea">
+			<ul>
+        		<li id="regi"><a href='http://acm.gdufe.edu.cn/User/Register'>Register</a></li>
+        		<li id="log"><a href='http://acm.gdufe.edu.cn/User/Login'>Login</a></li>
+			</ul>
+		</div>
+    </div>
+  </div>
+  <div id="main">
+    <div id="article">
+      <p>#include &lt;stdio.h&gt;<br>
+        int main()<br>
+        {<br>
+      &nbsp;&nbsp;printf(
+      <img id="mainimg" src="../Public/wel.png" width="850" height="47" alt=""/><br>
+        &nbsp;&nbsp;);<br>
+        &nbsp;&nbsp;return 0;<br>
+      }    </p>
+    </div>
+  </div>
+  <div id="footer">&copy; Copyright 2013 GDUFE All Rights Reserved</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,620 @@
+@charset "utf-8";
+body {
+	background-color: #ddd;
+	font-family: Consolas;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	font-size: 16px;
+}
+#preload {
+	background-image: url(../Public/icons/home_icon_glow.png);
+	background-image: url(../Public/icons/bug_icon_glow.png);
+	background-image: url(../Public/icons/cont_icon_glow.png);
+	background-image: url(../Public/icons/login_icon_glow.png);
+	background-image: url(../Public/icons/logout_icon_glow.png);
+	background-image: url(../Public/icons/me_icon_glow.png);
+	background-image: url(../Public/icons/pro_icon_glow.png);
+	background-image: url(../Public/icons/ran_icon_glow.png);
+	background-image: url(../Public/icons/reg_icon_glow.png);
+	background-image: url(../Public/icons/statis_icon_glow.png);
+	background-image: url(../Public/icons/sta_icon_glow.png);
+	background-image: url(../Public/icons/totop_golw.png);
+	background-image: url(../Public/update_h.png);
+	background-image: url(../Public/review_h.png);
+	width: 0px;
+	height: 0px;
+	display: inline;
+}
+
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 1000px;
+	min-width: 800px;
+	background-color: #FFFFFF;
+	-webkit-box-shadow: 1px 1px 10px;
+	box-shadow: 1px 1px 10px;
+}
+#main {
+	margin-top:20px;
+	min-height: 600px;
+}
+#monitor {
+	background-image: url(../Public/mac.jpg);
+	height: 800px;
+	margin-top: 25px;
+	background-repeat: no-repeat;
+}
+#mainnav {
+	width:1000px;
+	/*position:fixed;*/
+	height: 50px;
+	background-color: #808080;
+}
+#mainnav ul {
+	list-style-type: none;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	line-height: 120px;
+}
+#mainnav li {
+	width: 12.5%;
+	float: left;
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#mainimg {
+	padding-top: 25px;
+	margin-left: 50px;
+
+}
+
+#mainnav a {
+	float: left;
+	width: 100%;
+	text-align: center;
+	display: block;
+	background-color: #808080;
+	height: 50px;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-size: large;
+	font-weight: normal;
+}
+#mainnav a:hover {
+	background-color: #008CFF;
+	height: 70px;
+}
+/*thispage*/
+#mainnav a:hover, #mainnav a:active, #mainnav a:focus, #mainnav a.thispage {
+	background-color: #008cff;
+}
+
+#home a {
+	background-image: url(../Public/icons/home_icon.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+#home a:hover {
+	background-image: url(../Public/icons/home_icon_glow.png);
+	height: 70px;
+}
+#prob a {
+	background-image: url(../Public/icons/pro_icon.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+#prob a:hover {
+	background-image: url(../Public/icons/pro_icon_glow.png);
+	height: 70px;
+}
+#stat a {
+	background-image: url(../Public/icons/sta_icon.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+#stat a:hover {
+	background-image: url(../Public/icons/sta_icon_glow.png);
+	height: 70px;
+}
+#rank a {
+	background-image: url(../Public/icons/ran_icon.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+#rank a:hover {
+	background-image: url(../Public/icons/ran_icon_glow.png);
+	height: 70px;
+}
+#cont a {
+	background-image: url(../Public/icons/cont_icon.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+#cont a:hover {
+	background-image: url(../Public/icons/cont_icon_glow.png);
+	height: 70px;
+}
+#sta a {
+	background-image: url(../Public/icons/statis_icon.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+#sta a:hover {
+	background-image: url(../Public/icons/statis_icon_glow.png);
+	height: 70px;
+}
+#bug a {
+	background-image: url(../Public/icons/bug_icon.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+#bug a:hover {
+	background-image: url(../Public/icons/bug_icon_glow.png);
+	height: 70px;
+}
+#regi a {
+	background-image: url(../Public/icons/reg_icon.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+#regi a:hover {
+	background-image: url(../Public/icons/reg_icon_glow.png);
+	height: 70px;
+}
+#log a {
+	background-image: url(../Public/icons/login_icon.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+#log a:hover {
+	height: 70px;
+	background-image: url(../Public/icons/login_icon_glow.png);
+}
+#me a{
+        background-image: url(../Public/icons/me_icon.png);
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+#me a:hover {
+	height: 70px;
+        background-image: url(../Public/icons/me_icon_glow.png);
+}
+#logout a{
+        background-image: url(../Public/icons/logout_icon.png);
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+#logout a:hover {
+	height: 70px;
+        background-image: url(../Public/icons/logout_icon_glow.png);
+}
+#article {
+	color: #B3B3B3;
+	font-style: italic;
+	font-size: 30px;
+	padding-left: 35px;
+}
+#footer {
+	background-color: #008CFF;
+	height: 35px;
+	color: #FFFFFF;
+	padding-left: 15px;
+	padding-top: 20px;
+}
+
+h1 {
+	text-align: center;
+	color: #008CFF;
+}
+h2 {
+	color: #5A5A5A;
+	font-size: 20px;
+	font-style: italic;
+}
+
+#calTimeout{
+        color: #5A5A5A;
+        font-size: 15px;
+        font-style: italic;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	font-size: 16px;
+}
+a:link {
+	color: #006CFF;
+}
+a:hover , a:active, a:focus{
+	color: #FFA600;
+}
+#title{
+	text-align: center;
+	margin-bottom: -25px;
+}
+#description, #input, #output, #samplein, #sampleout, #source {
+	background-color: #FFA600;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-radius: 20px 0px 20px 0px;
+	padding-top: 1px;
+}
+#submit {
+	height: auto;
+	background-color: #777777;
+	width: 220px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 65px;
+}
+
+#submit ul {
+	list-style-type: none;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	text-align: center;
+}
+#submit li {
+	float: left;
+	margin-right: 5px;
+	width: 45%;
+}
+#submit a {
+	color: #FFFFFF;
+	display: block;
+	font-size: 22px;
+	font-weight:bold;
+	padding-top:.1em; 
+	padding-bottom: .1em;
+	background-color: #777777;
+	border-radius: 10px;
+
+
+}
+#submit a:hover {
+	background-color: #008CFF;
+}
+#ProblemsTable td:nth-child(2) {
+	color: black;
+}
+
+/*---------------------*/
+#statisticTable, #ContestPro, #ProblemsTable {
+	width: 100%;
+	color:red;
+}
+#CTRank {
+	width:100%;
+}
+
+.tableDiv{
+	padding-top: 15px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	min-height: 600px;
+        }
+table{
+	border: 1px solid #eeeeee;
+	border-collapse: collapse;
+	
+}
+th {
+	background-color: #0099FF;
+	color: #FFFFFF;
+	margin-top: 0px;
+
+	border: 1px solid #fff;
+	border-collapse: collapse;
+
+}
+td {
+	padding-top: .3em;
+	padding-bottom: .3em;
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	border: 1px dotted  #bfbfbf;
+        border-collapse: collapse;
+
+}
+tr:nth-child(even) {
+	background-color: #eeeeee;
+}
+#RanklistTable, #ContestTable, #CstatusTable, #statusTable {
+	width: 100%;
+}
+#ContestTable {
+	color: red;
+}
+/*--for debug page--*/
+#describ {
+	padding-top: 25px;
+	color: #FF3333;
+	text-align: center;
+	font-size: 100px;
+	font-family: "�����п�����";
+}
+
+/*.tableS  {margin: 1em 0; border-collapse: collapse; width:90%;  }*/
+/*.tdS  {border: 2px solid #eee; padding: .6em 10px; text-align: left;}
+/*---------------------*/
+
+pre {
+font-family:Consolas;
+font-size: 16px;
+white-space: pre-wrap; /* css-3 */
+white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: -o-pre-wrap; /* Opera 7 */
+word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+#loginList li:nth-child(3) {
+	text-align: right;
+	padding-right: 70px;
+}
+#updateList li:nth-child(4) {
+	text-align: right;
+	padding-right: 60px;
+}
+#verifycode li:nth-child(3) {
+	text-align: center;
+	
+}
+#verifycode li input[type="text"] {
+	width: 75px;
+}
+#resetList li:nth-child(4) {
+	padding-top: 25px;
+	padding-right:50px;
+	text-align: center;
+}
+/*--debug--*/
+#logform, #regform, #resetform{
+	padding-top: 10px;
+}
+
+#formDiv {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 350px;
+}
+#formDiv li {
+	list-style-type: none;
+	text-align: left;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+#RegAndRes li{
+	list-style-type: none;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+#RegAndRes a {
+	font-weight: bold;
+
+
+}
+
+.result.page {
+	padding-top: 25px;
+	text-align: center;
+}
+input[type="submit"]  {
+	border-width: 0px;
+	background-color: #008cff;
+	color: #FFFFFF;
+	font-size: 20px;
+	border-radius: 5px;
+}
+input[type="submit"]:hover {
+	background-color: #FFA600;
+}
+input[type="text"] {
+	width: 150px;
+}
+input[type="password"] {
+	width: 150px;
+}
+#statistics {
+        height: auto;
+        background-color: #777777;
+        width: 120px;
+        margin-left: auto;
+        margin-right: auto;
+	margin-bottom: 45px;	
+}
+
+#statistics ul {
+        list-style-type: none;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: center;
+}
+#statistics li {
+        float: left;
+        width: 100%;
+}
+#statistics a {
+        color: #FFFFFF;
+        display: block;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #777777;
+        border-radius: 10px;
+}
+#statistics a:hover {
+        background-color: #008CFF;
+}
+#formDi {
+ padding-left: 25px;
+}
+#feedForm {
+	padding-top:25px;
+	padding-left:25px;
+}
+#totop {
+	width: 35px;
+	position:fixed;
+	right:3%;
+	bottom:55px;
+`}
+
+#totop ul {
+	list-style-type: none;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	text-align: center;
+	line-height:85px;
+}
+#totop li {
+	float: left;
+	width: 100%;
+	overflow:hidden;
+}
+#totop a {
+	color:white;
+	display: block;
+	background-color: #777777;
+	background-image: url(../Public/icons/totop.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	height: 35px;
+	width: 35px;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+#totop a:hover {
+	height:55px;
+	background-color: #008CFF;
+	background-image: url(../Public/icons/totop_glow.png);
+}
+
+#aboutme {
+	width: 500px;
+	height: 500px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#aboutme a {
+	display: block;
+	width: 150px;
+	height: 150px;
+	font-size: 0px;
+}
+
+#upMeImg {
+	background-image: url(update.png);
+	background-repeat: no-repeat;
+	height: 150px;
+}
+#upMeImg:hover {
+	background-image: url(update_h.png);
+}
+#reMeImg {
+	background-image: url(review.png);
+	background-repeat: no-repeat;
+	height: 150px;
+}
+#reMeImg:hover {
+	background-image: url(review_h.png);
+}
+#upMe {
+	width: 150px;
+	float: left;
+	height: 300px;
+}
+#reMe {
+	width: 150px;
+	height: 300px;
+	float: right;
+}

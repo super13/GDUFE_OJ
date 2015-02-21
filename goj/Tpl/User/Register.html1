@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Register to GDUFE Online Judge</title>
+<link href="../Public/main.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/source-sans-pro:n6:default.js" type="text/javascript"></script>
+<script src ="../Public/Login.js" type="text/javascript"></script>
+<script language="JavaScript">
+ function fleshVerify(){ 
+     //重载验证码
+     var time = new Date().getTime();
+         document.getElementById('verifyImg').src= '!-APP-!/Public/verify/'+time;
+ }
+ </script>
+</head>
+
+<body onload="changeText(1)">
+<div id="wrapper">
+	<div id="header">
+		<div id="top"><img src="../Public/top.jpg" width="1024" height="150" alt=""/></div>
+        	<div id="mainnav">
+		<div>
+          	<ul>
+            		<li id="home"><a href="http://acm.gdufe.edu.cn/" >Home</a></li>
+            		<li id="prob"><a href="http://acm.gdufe.edu.cn/Problem/readList">Problems</a></li>
+            		<li id="stat"><a href="http://acm.gdufe.edu.cn/Statu/readList">Status</a></li>
+           		<li id="rank"><a href="http://acm.gdufe.edu.cn/User/readList">Ranklist</a></li>
+			<li id="cont"><a href="http://acm.gdufe.edu.cn/Contest/readList">Contests</a></li>
+			<li id="bug"><a href="http://acm.gdufe.edu.cn/Feedback">Feedback</a></li>
+		</ul>
+		</div>
+            		<div id= "LoginArea" class="LoginArea">
+				<ul>
+               			<li id="regi"><a href='http://acm.gdufe.edu.cn/User/Register' class="thispage">Register</a></li>
+               		 	<li id="log"><a href='http://acm.gdufe.edu.cn/User/Login'>Login</a></li>
+				</ul>
+            		</div>
+        	</div>
+	</div>
+	<div id="main">
+        <form id="regform"  action="__URL__/insert"  method="post" >
+          <table width="407" height="424" align="center">
+        <th height="95"><H2>Register Information</H2></th>
+          <tr>
+          <td><table height="273" align="center">
+            <tr>
+              <td width="150" align="left">Account:</td>
+              <td width="350" align="left"><input type="text" name="account"></td>
+              </tr>
+            <tr>
+            <tr>
+              <td width="150" align="left">Nick Name:</td>
+              <td width="350" align="left"><input type="text" name="nick_name"></td>
+              </tr>
+            <tr>
+              <td height="70" align="left">Password:</td>
+              <td align="left"><input type="password" name="password"></td>
+              </tr>
+            <tr>
+              <td align="left">Repeat Password:</td>
+              <td align="left"><input type="password" name="repassword"></td>
+              </tr>
+            <tr>
+              <td align="left">QQ:</td>
+              <td align="left"><input type="text" name="qq"></td>
+              </tr>
+            <tr>
+              <td align="left">School:</td>
+              <td align="left"><input type="text" name="school"></td>
+             </tr>
+            <tr>
+              <td align="left">Verify Code:</td>
+              <td align="left"><input type="text" name="verify" >
+              </tr>
+            <tr>
+                <td colspan ="2"align="center"><img id="verify" alt="验证码" onClick="show()" src="__APP__/Public/verify/"><a href="javascript:show()" style="text-decoration:none">  try a new code</a></td>
+              </tr>
+            <tr>
+              <td colspan="2" align="center"><input type="submit" value="提交"></td>
+          </tr>
+            </table></td>
+          </tr>
+          </table>
+	</form>
+	</div>
+	<div id="footer">&copy; Copyright 2013 GDUFE All Rights Reserved</div>
+</div>
+</body>
+</html>

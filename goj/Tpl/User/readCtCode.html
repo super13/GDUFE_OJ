@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Me in GDUFE Online Judge</title>
+	<link href="../Public/main.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="/goj/Tpl/Public/favicon.ico" type="image/x-icon" />
+	<script src ="../Public/Login.js" type="text/javascript"></script>
+	<script src = "//code.jquery.com/jquery-1.10.2.min.js" type = "text/javascript"></script>
+<script src = "../Public/page.js" type = "text/javascript"></script>
+      	<script type="text/javascript" src="../Public/scripts/shCore.js"></script>
+        <script type="text/javascript" src="../Public/scripts/shBrushBash.js"></script>
+        <script type="text/javascript" src="../Public/scripts/shBrushCpp.js"></script>
+        <link type="text/css" rel="stylesheet" href="../Public/styles/shCore.css"/>
+        <link type="text/css" rel="stylesheet" href="../Public/styles/shThemeDefault.css"/>
+        <script type="text/javascript">
+ 
+        SyntaxHighlighter.config.clipboardSwf = '../Public/scripts/clipboard.swf';
+ 
+        SyntaxHighlighter.config.strings = {
+ 
+            expandSource : '展开代码',
+ 
+            viewSource : '查看代码',
+ 
+            copyToClipboard : '复制代码',
+ 
+            copyToClipboardConfirmation : '代码复制成功',
+ 
+            print : '打印',
+ 
+            help: '?',
+
+	    alert:'\n',
+ 
+            noBrush: '不能找到刷子: ',
+ 
+            brushNotHtmlScript: '刷子没有配置html-script选项',
+ 
+            aboutDialog: '<div><h1>GUDFE Online Judge<h1></div>'
+ 
+        };
+ 
+        SyntaxHighlighter.all();
+ 
+        </script>
+</head>
+
+<body onload ="changeText(2)">
+<div id="wrapper">
+	<div id="header">
+		<div id="top"><img src="../Public/top.jpg"  alt=""/></div>
+        	<div id="mainnav">
+		<div>
+    		<ul>
+            		<li id="home"><a href="http://acm.gdufe.edu.cn/" >Home</a></li>
+            		<li id="prob"><a href="http://acm.gdufe.edu.cn/Problem/readList">Problems</a></li>
+            		<li id="stat"><a href="http://acm.gdufe.edu.cn/Statu/readList">Status</a></li>
+            		<li id="rank"><a href="http://acm.gdufe.edu.cn/User/readList">Ranklist</a></li>
+			<li id="cont"><a href="http://acm.gdufe.edu.cn/Contest/readList">Contests</a></li>
+			<li id="bug"><a href="http://acm.gdufe.edu.cn/Feedback">Feedback</a></li>
+		</ul>
+		</div>
+            		<div id= "LoginArea" class="LoginArea">
+				<ul>
+                		<li id="regi"><a href='http://acm.gdufe.edu.cn/User/Register'>Register</a></li>
+                		<li id="log"><a href='http://acm.gdufe.edu.cn/User/Login' class ="thispage">Login</a></li>
+				</ul>
+            		</div>
+        	</div>
+	</div>
+	<div id="main">
+	<div>
+	<pre class="brush: cpp;">{$data.code}</pre>
+	</div>
+	</div>
+	<div id="footer">&copy; Copyright 2013 GDUFE All Rights Reserved</div>
+</div>
+</body>
+</html>

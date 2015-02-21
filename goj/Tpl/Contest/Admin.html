@@ -1,0 +1,26 @@
+<a href="http://acm.gdufe.edu.cn/Contest/add">新比赛</a></br></br>
+<a href="http://acm.gdufe.edu.cn/Conpro/add">增加题目</a></br></br>
+<table>
+       <tr>
+        <th width = "10%">ID</th>
+        <th width = "30%">Contest Name</th>
+        <th width = "50%">Duration</th>
+        <th width = "10%">Status</th>
+        </tr>
+     <volist name="data" id="vo">
+     <tr>
+     <td>{$vo.contest_id}</td>
+     <td  class ="ProText" id="Problems">
+       {$vo.name}
+     </td>
+     <td class="ProText" id="Problems">{$vo.start_time} To {$vo.end_time}
+     </td>
+     <td>
+        {$vo.status}
+     </td>
+     </tr>
+     </volist>
+</table>
+ 修改题目：</br>
+比赛id号：<input id ="cid"type="text" value="100000">题号：<input id="pid" type="text" value="1000">
+<input type="button" value ="修改" onclick ="javascript:window.location.href='http://acm.gdufe.edu.cn/Conpro/edit/cid/'+document.getElementById('cid').value+'/pid/'+document.getElementById('pid').value;">

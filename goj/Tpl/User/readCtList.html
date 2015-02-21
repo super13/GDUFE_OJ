@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login to GDUFE Online Judge</title>
+<link href="../Public/main.css" rel="stylesheet" type="text/css">
+<script src = "//code.jquery.com/jquery-1.10.2.min.js" type = "text/javascript"></script>
+<script src = "../Public/page.js" type = "text/javascript"></script>
+<script src ="../Public/Login.js" type="text/javascript"></script>
+</head>
+
+<body onload ="changeText(2)">
+<div id="wrapper">
+	<div id="header">
+		<div id="top"><img src="../Public/top.jpg"  alt=""/></div>
+        	<div id="mainnav">
+		<div>
+    		<ul>
+            		<li id="home"><a href="http://acm.gdufe.edu.cn/" >Home</a></li>
+            		<li id="prob"><a href="http://acm.gdufe.edu.cn/Problem/readList">Problems</a></li>
+            		<li id="stat"><a href="http://acm.gdufe.edu.cn/Statu/readList">Status</a></li>
+            		<li id="rank"><a href="http://acm.gdufe.edu.cn/User/readList">Ranklist</a></li>
+			<li id="cont"><a href="http://acm.gdufe.edu.cn/Contest/readList">Contests</a></li>
+			<li id="bug"><a href="http://acm.gdufe.edu.cn/Feedback">Feedback</a></li>
+		</ul>
+		</div>
+            		<div id= "LoginArea" class="LoginArea">
+				<ul>
+                		<li id="regi"><a href='http://acm.gdufe.edu.cn/User/Register'>Register</a></li>
+                		<li id="log"><a href='http://acm.gdufe.edu.cn/User/Login' class ="thispage">Login</a></li>
+				</ul>
+            		</div>
+        	</div>
+	</div>
+	<div id="main">
+    <div id="title">
+    <h1>{$data.nick_name}:</h1>
+    </div>
+    <div id="formDi">
+	</br><h2>Solved Problems:</h2>{$data.solvedP}</br>
+	<h2>Total Solved: {$data.solvedC}</h2>
+    </div>
+</div>
+	<div id="footer">&copy; Copyright 2013 GDUFE All Rights Reserved</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<Form id ="upload" method="post" action="__URL__/insert">
+ 标题：<INPUT type="text" name="title"><br/>
+ 内容：<TEXTAREA name="content" rows="5" cols="45">{$vo.img}</TEXTAREA><a href="http://acm.gdufe.edu.cn/Upload/">jpg文件上传</a> (如需上传图片请先上传图片，上传后其他内容会清空)<br/><br/>
+算法超时时间(单位：ms)：<INPUT type ="text" name ="calTimeout" value ="1000">  运行超时时间(单位：ms)：<INPUT type ="text" name ="runTimeout" value="2000"><br/><br/>
+Input Description: <TEXTAREA name="input" rows="4" cols="45"></TEXTAREA>     Input Data: <TEXTAREA name="inputData" rows="5" cols="45"></TEXTAREA><br/><br/>
+Output Description: <TEXTAREA  name="output" rows="4" cols="45"></TEXTAREA>  Output Data: <TEXTAREA name="outputData" rows="5" cols="45"></TEXTAREA><br/><br/>
+新增超时数据，如题目跟超时无关保持跟上面inputdata 和outputdata相同即可，判题会测两组数据，前面数据过了，超时数据没过即为超时</br>
+Simple input: <TEXTAREA  name="spInput" rows="4" cols="45">{$vo.spInput}</TEXTAREA> TimeOut Input Data: <TEXTAREA name="timeinputData" rows="5" cols="45">{$vo.timeinputData}</TEXTAREA><br/><br/>
+Simple output: <TEXTAREA  name="spOutput" rows="4" cols="45">{$vo.spOutput}</TEXTAREA> TimeOut Output Data: <TEXTAREA name="timeoutputData" rows="5" cols="45">{$vo.timeoutputData}</TEXTAREA><br/><br/>
+Author: <INPUT type="text" name="author"><br/><br/>
+<INPUT type="submit" value="提交">
+ </FORM>
